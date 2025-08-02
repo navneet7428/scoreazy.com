@@ -1,0 +1,336 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    background: radial-gradient(ellipse 100% 70% at 60% 10%, #91eae4 0%, #7f7fd5 100%), linear-gradient(120deg, #fcf6ba 0%, #f0a6ca 100%);
+    background-blend-mode: lighten;
+    color: #1a2032;
+    min-height: 100vh;
+  }
+  
+  /* NAVBAR */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 7vw 1rem 7vw;
+    background: transparent;
+    position: relative;
+    z-index: 10;
+  }
+  .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #6536fd;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+  }
+  .navbar ul {
+    display: flex;
+    gap: 2.3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #595968;
+    font-size: 1.1rem;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+  }
+  .navbar a:hover, .btn-primary {
+    color: #6536fd;
+    border-bottom: 2px solid #f383f1;
+  }
+  .btn-primary {
+    border-radius: 2rem;
+    padding: 0.55rem 1.6rem;
+    background: linear-gradient(90deg, #f383f1, #a6c1ee);
+    color: #fff !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    border: none;
+    box-shadow: 0 3px 14px 0 rgba(243,131,241,0.12);
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background: linear-gradient(90deg, #a6c1ee, #f383f1);
+  }
+  
+  /* HERO + BUBBLES BACKGROUND */
+  .hero-bg {
+    position: relative;
+    overflow: hidden;
+    min-height: 94vh;
+    background: linear-gradient(110deg,#f4f4fd 0%,#e2ecfc 85%);
+  }
+  .bubbles:before, .bubbles:after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .bubbles:before {
+    width: 340px; height: 340px;
+    background: radial-gradient(circle, #f383f1 0%, #91eae4 100%);
+    left: -140px; top: -120px;
+    filter: blur(52px);
+    opacity: 0.22;
+  }
+  .bubbles:after {
+    width: 220px; height: 220px;
+    background: radial-gradient(ellipse,#6536fd 0%,#a6c1ee 100%);
+    right: -100px; bottom: 40px;
+    filter: blur(34px);
+    opacity: 0.16;
+  }
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5vw;
+    max-width: 1160px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 5vw 2vw 4vw 2vw;
+    background: rgba(255,255,255,0.92);
+    border-radius: 2rem;
+    box-shadow: 0 16px 64px 0 rgba(101,54,253,.06);
+  }
+  .hero-text {
+    flex: 1 1 410px;
+    min-width: 310px;
+  }
+  .hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.6rem;
+    margin-bottom: 1.3rem;
+    color: #32136f;
+    letter-spacing: 0px;
+  }
+  .accent {
+    background: linear-gradient(90deg,#f383f1 20%, #6536fd 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero-img img {
+    max-width: 450px !important;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 2rem;
+    box-shadow: 0 7px 28px 0 rgba(101,54,253,.13);
+  }
+  .hero p {
+    font-size: 1.18rem;
+    margin-bottom: 1.5rem;
+    color: #52526b;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  .features { display: flex; gap: 0.7rem; flex-wrap: wrap; }
+  .chip {
+    background: linear-gradient(90deg,#91eae4,#f383f1);
+    border-radius: 1.5rem;
+    padding: 0.4rem 1.2rem;
+    font-family: 'Montserrat',sans-serif;
+    color: #621ebc;
+    font-weight: 800;
+    font-size: 0.98rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 1px 6px 0 rgba(243,131,241,0.11);
+  }
+  
+  /* CARDS WITH IMAGES */
+  .section {
+    max-width: 1200px;
+    margin: 4vw auto 0 auto;
+    padding: 2vw;
+  }
+  .card {
+    display: flex;
+    background: rgba(255,255,255,0.96);
+    box-shadow: 0 12px 48px 0 rgba(101,54,253,.09);
+    border-radius: 2.3rem;
+    align-items: center;
+    gap: 3vw;
+    margin-bottom: 2rem;
+    padding: 3vw 2vw;
+  }
+  .card-body { flex: 2; }
+  .card-img img {
+    width: 255px !important;
+    max-width: 98vw;
+    border-radius: 1.1rem;
+    box-shadow: 0 3px 11px 0 rgba(149,69,255,0.1);
+  }
+  .card h2 {
+    font-family:'Montserrat',sans-serif;
+    color: #6536fd;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+  .card p {
+    color: #4c4989;
+    font-size: 1.15rem;
+  }
+  
+  /* WHY-CARDS */
+  .section-why {
+    background: linear-gradient(103deg,#e3eeff 0%,#fff9e9 98%);
+    padding-bottom: 4vw;
+  }
+  .section-why h2 {
+    color: #6536fd;
+    font-family:'Montserrat',sans-serif;
+    font-size: 2.1rem;
+    margin-bottom: 2.2rem;
+    text-align: center;
+  }
+  .why-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.2rem;
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  .why-card {
+    background: rgba(255,255,255,0.94);
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 8px 36px 0 rgba(101,54,253,.08);
+    padding: 2.3rem 1rem 2.9rem 1rem;
+    min-height: 320px;
+    cursor: pointer;
+  }
+  .why-card img {
+    height: 130px;
+    max-width: 99vw;
+    margin-bottom: 1.2rem;
+  }
+  .why-card h3 {
+    color: #f383f1;
+    font-family:'Montserrat',sans-serif;
+    font-size: 1.23rem;
+    margin-bottom: 0.8rem;
+  }
+  .why-card p {
+    color: #684a84;
+    font-size: 1.07rem;
+    min-height: 32px;
+  }
+  
+  /* FOOTER - Fresh, Modern Redesign */
+  .footer-bg {
+    background: linear-gradient(90deg, #6536fd 0%, #f383f1 100%);
+    padding: 4rem 5vw 3rem 5vw;
+    color: #f0ebfc;
+    font-family: 'Montserrat', sans-serif;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    box-shadow: 0 -10px 30px rgba(101,54,253,0.2);
+  }
+  .contact-card {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(243,131,241,0.25);
+    border-radius: 2rem;
+    text-align: center;
+    padding: 3rem 3rem 4rem 3rem;
+    backdrop-filter: blur(14px);
+  }
+  .contact-card h3 {
+    color: #fcecfc;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1.1px;
+  }
+  .contact-card p {
+    color: #f3dcfa;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.8rem;
+  }
+  .newsletter {
+    display: flex;
+    justify-content: center;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+  }
+  .newsletter input[type="email"] {
+    padding: 0.7rem 1.3rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    min-width: 260px;
+    max-width: 360px;
+    box-shadow: 0 3px 14px 0 rgba(243,131,241,0.13);
+  }
+  .newsletter button {
+    background: #fcecfc;
+    border: none;
+    padding: 0.65rem 2.1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: #6536fd;
+    box-shadow: 0 4px 16px 0 rgba(101,54,253,0.2);
+  }
+  .newsletter button:hover {
+    background: #f383f1;
+    color: #fff;
+  }
+  .policy {
+    margin-top: 2.2rem;
+    font-size: 0.97rem;
+    color: #e6e9fa;
+  }
+  .policy a {
+    color: #efe0fc;
+    margin: 0 12px;
+    text-decoration: underline;
+  }
+  .policy a:hover {
+    color: #fff;
+  }
+  .copyright {
+    margin-top: 2.2rem;
+    font-size: 1.02rem;
+    color: #ddbbf9;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 900px) {
+    .hero { flex-direction: column-reverse; padding: 8vw 3vw 4vw 3vw; }
+    .navbar { flex-direction: column; gap: 1.2rem; }
+    .card { flex-direction: column-reverse; text-align: center; padding: 2vw 1vw; }
+    .card-img img { margin-bottom: 2rem; }
+    .why-cards { grid-template-columns: 1fr !important; max-width: 99vw; }
+    .contact-card { width: 96vw; padding: 1.5rem 0.5rem 2rem 0.5rem; }
+  }
+  @media (max-width: 600px) {
+    .hero h1, .card h2, .section-why h2 { font-size: 1.17rem; }
+    .navbar { font-size: 1.05rem; padding: 1.1rem 2vw 0.6rem 2vw;}
+    .chip { font-size: 0.91rem;}
+    .why-card { padding: 1rem 0.2rem 2rem 0.2rem; }
+    .contact-card { padding: 1.1rem 0.2rem; }
+    .newsletter input[type="email"] { min-width: 98vw; max-width: 98vw; margin-bottom: 0.6rem; }
+    .newsletter { flex-direction: column; gap: 0.6rem; }
+    .newsletter button { width: 100%; }
+  }
+  .why-card:last-child { margin-bottom: 0 !important; }
+  
